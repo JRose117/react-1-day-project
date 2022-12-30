@@ -1,15 +1,18 @@
 import { useEffect } from 'react'
-import axios from 'axios'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Allcats from './components/Allcats'
 
 const App = () => {
-  useEffect(() => {
-    const getData = async () => {
-      console.log('working')
-    }
-    getData()
-  })
 
-  return <h1>Hello World</h1>
+  return (
+    <div className="site-wrapper">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Allcats />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App
