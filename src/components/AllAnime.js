@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import AnimeCard from './AnimeCard'
 
-const AllAnime = () => {
+
+export default function AllAnime() {
 
   const [errors, setErrors] = useState(false)
   const [anime, setAnime] = useState([])
-
+  
   useEffect(() => {
     const getAnimeData = async () => {
       try {
@@ -22,11 +23,11 @@ const AllAnime = () => {
   console.log(anime)
 
   const animeComp = anime.map(oneAnime => {
-    return <AnimeCard
+    return <AnimeCard 
       key={oneAnime.mal_id}
       english_title={oneAnime.title_english}
-      japanese_title={oneAnime.title_japanese}
-      image={oneAnime.images.jpg.image_url}
+      japanese_title={oneAnime.title_japanese}  
+      image={oneAnime.images.jpg.image_url}  
     />
   })
 
@@ -36,5 +37,3 @@ const AllAnime = () => {
     </>
   )
 }
-
-export default AllAnime
