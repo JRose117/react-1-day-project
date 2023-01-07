@@ -1,1 +1,1 @@
-Intentionally unfinished project. revising get requests in react
+No Longer a one day project - now a collection of Get Request Revision
