@@ -5,19 +5,26 @@ import AllAnime from './components/AllAnime'
 import Beer from './components/Beer'
 import Form from './components/Form'
 import Form2 from './components/Form2'
+import Form3 from './components/Form3'
+import NavBar from './components/NavBar'
+
+
+
 
 const App = () => {
 
   return (
     <div className="site-wrapper">
       <BrowserRouter>
+        <NavBar/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
           <Route path="/anime" element={<AllAnime />} />
           {/* <Route path="/beer" element={<AllBeer />} /> */}
           <Route path="/beer" element={<Beer />} />
           <Route path="/form" element={<Form />} />
           <Route path="/form2" element={<Form2 />} />
+          <Route path="/form3" element={<Form3 />} />
           {/* <Route path='/anime/:animeId' element={<OneAnime />}/> */}
         </Routes>
       </BrowserRouter>
