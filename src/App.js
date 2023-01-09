@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
-import AllAnime from './components/AllAnime'
+import AllAnime from './components/archive/AllAnime'
+import Anime from './components/Anime'
 // import AllBeer from './components/AllBeer'
 import Beer from './components/Beer'
 import Form from './components/Form'
@@ -19,7 +20,8 @@ const App = () => {
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/anime" element={<AllAnime />} />
+          {/* <Route path="/anime" element={<AllAnime />} /> */}
+          <Route path="/anime" element={<Anime />} />
           {/* <Route path="/beer" element={<AllBeer />} /> */}
           <Route path="/beer" element={<Beer />} />
           <Route path="/form" element={<Form />} />
