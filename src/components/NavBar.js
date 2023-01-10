@@ -12,6 +12,9 @@ const NavBar = () => {
       <NavDropdown title="Get Requests" id="basic-nav-dropdown">
         <Nav.Link href="/anime">Anime</Nav.Link>
         <Nav.Link href="/beer">Beer</Nav.Link>
+        <Nav.Link href="/Crypto">Crypto</Nav.Link>
+        <Nav.Link href="/Cocktails">Cocktails</Nav.Link>
+        <Nav.Link href="/HarryPotter">Harry Potter</Nav.Link>
       </NavDropdown>
     </Nav>
   )

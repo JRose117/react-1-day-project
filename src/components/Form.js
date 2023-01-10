@@ -19,10 +19,7 @@ const Form = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    setForm({
-      ...form,
-      [name]: value,
-    })
+    setForm({ ...form, [name]: value })
   }
 
   const handleSubmit = (event) => {

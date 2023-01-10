@@ -4,6 +4,10 @@ import AllAnime from './components/archive/AllAnime'
 import Anime from './components/Anime'
 // import AllBeer from './components/AllBeer'
 import Beer from './components/Beer'
+import Cocktails from './components/Cocktails'
+import DrinkSingle from './components/DrinkSingle'
+import Crypto from './components/Crypto'
+import HarryPotter from './components/HarryPotter'
 import Form from './components/Form'
 import Form2 from './components/Form2'
 import Form3 from './components/Form3'
@@ -24,6 +28,10 @@ const App = () => {
           <Route path="/anime" element={<Anime />} />
           {/* <Route path="/beer" element={<AllBeer />} /> */}
           <Route path="/beer" element={<Beer />} />
+          <Route path="/cocktails" element={<Cocktails />} />
+          <Route path="/Crypto" element={<Crypto />} />
+          <Route path="/cocktails/:id" element={<DrinkSingle />} />
+          <Route path="/HarryPotter" element={<HarryPotter />} />
           <Route path="/form" element={<Form />} />
           <Route path="/form2" element={<Form2 />} />
           <Route path="/form3" element={<Form3 />} />
